@@ -35,7 +35,11 @@ def get_operators(type):
     else:
         return []
 
+###############
 # API Endpoints
+###############
+
+# Home endpoint redirects to docs
 @app.get('/')
 def Home():
     response = RedirectResponse(url='/docs')
