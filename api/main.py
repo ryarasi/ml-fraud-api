@@ -39,9 +39,7 @@ def get_operators(type):
 # API Endpoints
 @app.get('/')
 def Home():
-    response = RedirectResponse(url='/docs')
-    return response
-
+    return RedirectResponse('/docs',status_code=200)
 
 # This is meant to return attributes to show in the dropdown in the UI
 @app.get('/attributes')
