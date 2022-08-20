@@ -2,6 +2,7 @@ from fastapi import FastAPI, Response
 import uvicorn
 import os
 import requests
+from fastapi.responses import RedirectResponse
 
 app = FastAPI()
 
@@ -38,8 +39,8 @@ def get_operators(type):
 # API Endpoints
 @app.get('/')
 def Home():
-   r = requests.get('docs')
-   return Response(content=r.content)   
+    return RedirectResponse('/docs')
+
 
 
 # This is meant to return attributes to show in the dropdown in the UI
