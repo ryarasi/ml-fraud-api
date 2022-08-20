@@ -17,6 +17,7 @@ Live deployment - https://fl-ml-fraud.herokuapp.com/
     2. [Optional] Node JS & NPM [Required to use the automated scripts in the package.json file]
 2. Make sure that you're in the `dev` branch when running locally.
 3. Run `npm run start` to initialize the repo in the dev environment. If you do not have NPM, just enter `docker compose -f docker-compose-dev.yml up` to start the API locally. The commands are available in the `package.json` file in the scripts section.
+4. Once the service starts up, you can visit `http://localhost:8000` to run the API locally.
 
 # Deployment
 
