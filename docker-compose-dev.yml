@@ -9,6 +9,8 @@ services:
       - ./db_data/:/var/lib/postgresql/data/
     networks:
       - api_network
+    ports:
+      - 5432:5432
     restart: always
 
   web:
