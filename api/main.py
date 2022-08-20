@@ -38,8 +38,8 @@ def get_operators(type):
 # API Endpoints
 @app.get('/')
 def Home():
-    r = requests.get('/docs')
-    return Response(content=r.content)    
+   r = requests.get('docs')
+   return Response(content=r.content)   
 
 
 # This is meant to return attributes to show in the dropdown in the UI
